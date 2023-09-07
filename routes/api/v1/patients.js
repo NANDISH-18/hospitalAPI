@@ -10,6 +10,7 @@ router.post('/register', verifyToken, patientController.register);
 
 // patients/:id/createreport
 router.post('/:id/create_report',verifyToken, reportController.create_reports);
+router.get('/:id/all_reports',reportController.all_reports);
 
 
 module.exports = router;
